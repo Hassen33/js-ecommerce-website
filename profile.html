@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Techri |profile page</title>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&display=swap" rel="stylesheet">
+<!-- font awsome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/login.css">
+</head> 
+<body>
+<header>
+    <div class="container"><!-- bootstrap class it will be better when we don't add css statement to it -->
+        <div class="header-content">
+            <a href="index.html" class="brand"> Techri</a>
+            <nav>
+                <ul id="links"></ul>
+                <ul id="user_info"></ul>
+            </nav>
+        </div>  
+    </div><!-- ./container -->
+</header>
+<!-- ---------------------form--------------- -->
+
+<section class="home">
+    <div class="container">
+        <div class="profile">
+           <img class="profile-pic" src="/images/user-avatar.png" alt="" srcset="">
+           <div class="information">
+                <h2 id="username"></h2>
+                <p id="email"></p>
+                <p id="productlength">you have posted <span></span> &nbsp; products</p>
+            </div><!-- ./information -->
+           <a href="editProfile.html" class="edit"> <i class="fas fa-edit fa-2x" style="color: rgba(0, 0, 0, 0.5);">Edit</i></a>
+        </div>
+        <h2>My products</h2>
+        <div class="myproducts"></div>
+        <div class="noproducts" style="display: none;">
+            there's no product purchased
+         </div>
+    </div><!-- ./container -->
+</section>
+   <script src="js/data.js"></script>
+   <script src="js/user.js"></script>
+   <script src="js/purshased.js"></script>
+   <!-- <script src="js/myProducts.js"></script> -->
+   <script src="js/profile.js"></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Techri |home Page</title>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&display=swap" rel="stylesheet">
+<!-- font awsome 5 -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+    <div class="container"><!-- bootstrap class it will be better when we don't add css statement to it -->
+        <div class="header-content">
+            <a href="index.html" class="brand"> Techri</a>
+            <nav>
+                <ul id="links"></ul>
+                <ul  id="user_info"></ul>
+                    
+            </nav>
+        </div>  
+    </div><!-- ./container -->
+</header>
+<!-- ---------------------products--------------- -->
+
+<section class="home">
+ <div class="container">
+    <input type="text" id="search" placeholder="search by name">
+    <hr> 
+    <div class="products-filters">
+        <div class="products"></div><!-- ./products -->
+        <div class="products-filter">
+            <h2>filter by size</h2>
+            <select  id="size-filter">
+            <option value="" hidden>Filter by size</option>
+            <option value="all">all</option>
+            <option value="small">small</option>
+            <option value="medium">medium</option>
+            <option value="large">large</option>
+            </select>
+            <br>
+        </div><!-- #/products-filter -->
+    </div><!-- ./products-filters -->
+    </div><!-- ./container -->
+ <a href="createProduct.html"><i class="fas fa-plus create-product"></i></a>
+</section>
+<script src="js/user.js"></script>
+<script src="js/data.js"></script>
+<script src="js/purshased.js"></script>
+<script src="JS/script.js"></script>
+</body>
+</html>

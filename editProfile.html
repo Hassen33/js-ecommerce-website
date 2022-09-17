@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Techri | edit Profile Page</title>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&display=swap" rel="stylesheet">
+<!-- font awsome 5 -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<!-- css -->
+<link rel="stylesheet" href="css/form.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+    <div class="container"><!-- bootstrap class it will be better when we don't add css statement to it -->
+        <div class="header-content">
+            <a href="index.html" class="brand"> Techri </a>
+            <nav>
+                <ul id="links"></ul>
+                <ul  id="user_info"></ul>
+                    
+            </nav>
+        </div>  
+    </div><!-- ./container -->
+</header>
+<!-- ---------------------products--------------- -->
+        
+<div class="container">
+    <section class="create">
+        <h3><span> edit </span> profile</h3>
+        <form id="create-form">
+            <input type="file" id="myImg" name="filename" placeholder="add image">
+            <input type="text" placeholder="change name " id="product-name">
+            <input placeholder="new email" id="product-desc" cols="36" rows="5" ></input>
+        
+            <!-- <input type="text" placeholder="price"> -->
+            <!-- <input type="text" placeholder="telephone"> -->
+            <button type="submit" id="create-form">&nbsp; Edit &nbsp;  </button>
+        </form>
+    </section>
+<a href="createProduct.html"><i class="fas fa-plus create-product"></i></a>
+</div><!-- ./container -->
+<script src="js/data.js"></script>
+<script src="js/user.js"></script>
+<script src="js/purshased.js"></script>
+<script src="JS/editProfile.js"></script>
+</body>
+</html>
